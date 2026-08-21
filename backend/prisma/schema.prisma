@@ -1,0 +1,26 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum AppointmentStatus {
+  pending
+  confirmed
+  cancelled
+}
+
+model Appointment {
+  id            String            @id @default(uuid())
+  patientName   String
+  appointmentAt DateTime
+  status        AppointmentStatus @default(pending)
+  createdAt     DateTime          @default(now())
+
+  @@map("appointments")
+}
