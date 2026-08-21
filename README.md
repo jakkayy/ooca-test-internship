@@ -95,6 +95,3 @@ AI tools (Antigravity AI Assistant) were utilized during the development of this
 - Drafting project architecture recommendations and implementation checklists.
 - Boilerplate generation for NestJS DTOs, Prisma schema configuration, and Tailwind CSS components.
 - Diagnosing environment compatibility issues (e.g. Alpine Linux OpenSSL dependencies for Prisma binary engines in Docker).
-
-**Statement of Understanding**:
-All business logic rules (including the 30-minute slot overlap calculation algorithm, date validations, HTTP status mapping, and Repository pattern abstraction) were thoroughly reviewed, tested, and understood. Every line of code submitted can be explained and defended in detail.
